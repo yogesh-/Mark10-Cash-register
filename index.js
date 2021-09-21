@@ -12,7 +12,7 @@ Nextsection.style.display = "none";
 
 
 Next.addEventListener("click",function nextDisplay(){
-    if (Next.value){
+    if (Number(totalBill.value)){
         Nextsection.style.display = "block";
         Next.style.display = "none";
     }
@@ -20,8 +20,8 @@ Next.addEventListener("click",function nextDisplay(){
 
 calcButton.addEventListener("click",function inputValidation() {
      hideMessage();
-    if  (totalBill.value > 0){
-        if (cashGiven.value >= totalBill.value){
+    if  (Number(totalBill.value) > 0){
+        if (Number(cashGiven.value) >= Number(totalBill.value)) {
              const differenceValue = cashGiven.value - totalBill.value;
              calculateChange(differenceValue);
              console.log(differenceValue);
