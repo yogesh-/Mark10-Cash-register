@@ -8,15 +8,38 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="container">
     <h1 class="heading">Cash Register App</h1>
     <p class="description">Inform the cashier change amount and how to return it using the least number of currency denominations </p>
 
     <label for="total-bill">Total Bill Amount </label>   
     <input id="total-bill" type="text">
-    <br>
+    
     <label for="cash-given">Cash Given by customer</label>
     <input id="cash-given" type="text">
+        
+    <button id="calculate">Calculate Change</button>
 
+    <table class="change-table">
+        <caption>Change Table</caption>
+        <tr>
+            <td>Number of notes</td>
+        </tr>
+
+        <tr>
+            <td>currency</td>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+
+</div>
 </body>
 <script src="./index.js"></script>
 </html>
