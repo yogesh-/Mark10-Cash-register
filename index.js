@@ -2,7 +2,7 @@ const totalBill = document.querySelector("#total-bill");
 const cashGiven = document.querySelector("#cash-given");
 const calcButton = document.querySelector("#calculate");
 const message = document.querySelector("#error-message");
-const noOfNotes = document.querySelector(".no-of-notes");
+const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const availableDenominations = [2000,500,100,20,10,5,1];
 
