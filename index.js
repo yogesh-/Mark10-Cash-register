@@ -9,6 +9,7 @@ calcButton.addEventListener("click",function inputValidation() {
     if  (totalBill > 0){
         if (cashGiven >= totalBill){
              const differenceValue = cashGiven - totalBill;
+             console.log(differenceValue);
         }else{
             showMessage("Dear customer you need to pay in full");
         }
